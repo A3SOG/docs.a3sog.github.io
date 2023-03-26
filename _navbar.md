@@ -7,6 +7,14 @@
   * [Mods](starting/mods.md)
   * [Your First Mission](starting/first-mission.md)
 
+* Framework
+  * [Home](framework/index.md)
+  * [Home](framework/attack.md)
+  * [Home](framework/destroy.md)
+  * [Home](framework/hostage.md)
+  * [Home](framework/hvt.md)
+  * [Home](framework/ied.md)
+
 * Operations
   * [Terminology](operations/terminology.md)
   * [Gameplay Rules](operations/rules.md)
