@@ -1,7 +1,3 @@
----
-title: 'Documents - Framework'
----
-
 # Framework
 
 ## About

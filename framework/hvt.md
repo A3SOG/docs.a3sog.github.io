@@ -1,7 +1,3 @@
----
-title: 'Documents - HVT Task Module'
----
-
 # HVT Task Module
 ## Description
 This module adds support for HVT Capture or Eliminate Tasks/Missions.

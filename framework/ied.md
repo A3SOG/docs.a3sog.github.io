@@ -1,7 +1,3 @@
----
-title: 'Documents - IED Task Module'
----
-
 # IED Task Module
 
 ## Description

@@ -1,7 +1,3 @@
----
-title: 'Documents - Hostage Task Module'
----
-
 # Hostage Task Module
 
 ## Description

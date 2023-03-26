@@ -1,7 +1,3 @@
----
-title: 'Documents - Attack Task Module'
----
-
 # Attack Task Module
 
 ## Description

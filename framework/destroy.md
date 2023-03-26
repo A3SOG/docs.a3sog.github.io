@@ -1,7 +1,3 @@
----
-title: 'Documents - Destroy Task Module'
----
-
 # Destroy Task Module
 
 ## Description
