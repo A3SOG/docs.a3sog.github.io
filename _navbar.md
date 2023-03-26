@@ -8,11 +8,11 @@
 
 * Framework
   * [Home](framework/index.md)
-  * [Home](framework/attack.md)
-  * [Home](framework/destroy.md)
-  * [Home](framework/hostage.md)
-  * [Home](framework/hvt.md)
-  * [Home](framework/ied.md)
+  * [Attack Module](framework/attack.md)
+  * [Destroy Module](framework/destroy.md)
+  * [Hostage Module](framework/hostage.md)
+  * [HVT Module](framework/hvt.md)
+  * [IED Module](framework/ied.md)
 
 * Operations
   * [Terminology](operations/terminology.md)
