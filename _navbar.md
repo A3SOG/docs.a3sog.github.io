@@ -1,5 +1,4 @@
 * Organization
-
   * [Constitution](organization/constitution.md)
   * [Code of Conduct](organization/coc.md)
 
