@@ -49,9 +49,9 @@ Arguments:
 	3: SCALAR - Amount of funds the company recieves if the task is successful
 	4: SCALAR - Amount of rating the company and player lose if the task is failed
 	5: SCALAR - Amount of rating the company and player recieve if the task is successful
-	6: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
-	7: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
-	8: ARRAY - Array of task types to select from (Optional, default: [false, false])
+	6: ARRAY - Array of task types to select from (Optional, default: [false, false])
+	7: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
+	8: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
 	9: SCALAR - Number of seconds before hostages are killed (Optional)
 	10: STRING - Marker name for the cbrn zone
 
@@ -60,10 +60,10 @@ Example:
 	["task_name", "marker_name", 1, 2, 1500000, 75, 500] call sog_client_contract_fnc_hostage
 	
 	// Execution When Time Limit Expires
-	["task_name", "marker_name", 1, 2, 1500000, 75, 500, false, false, [false, true], 45] spawn sog_client_contract_fnc_hostage
+	["task_name", "marker_name", 1, 2, 1500000, 75, 500, [false, true], false, false, 45] spawn sog_client_contract_fnc_hostage
 
 	// CBRN Attack When Time Limit Expires
-	["task_name", "marker_name", 1, 2, 1500000, 75, 500, false, false, [true, false], 45, "marker_name"] spawn sog_client_contract_fnc_hostage
+	["task_name", "marker_name", 1, 2, 1500000, 75, 500, [true, false], false, false, 45, "marker_name"] spawn sog_client_contract_fnc_hostage
 ```
 
 ## Links

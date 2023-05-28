@@ -36,23 +36,23 @@ Arguments:
 	3: SCALAR - Amount of funds the company recieves if the task is successful
 	4: SCALAR - Amount of rating the company and player lose if the task is failed
 	5: SCALAR - Amount of rating the company and player recieve if the task is successful
-	6: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
-	7: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
-	8: ARRAY - Array of task types to select from (Optional, default: [true, false])
+	6: ARRAY - Array of task types to select from (Optional, default: [true, false])
+	7: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
+	8: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
 	9: SCALAR - Number of seconds before hvts escape (Optional)
 
 Example:
 	// Capture No Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, false, false, [true, false]] call sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, 75, 300, [true, false], false, false] call sog_client_contract_fnc_hvt
 
 	// Eliminate No Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, false, false, [false, true]] call sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, 75, 300, [false, true], false, false] call sog_client_contract_fnc_hvt
 
 	// Capture Within Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, false, false, [true, false], 45] spawn sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, 75, 300, [true, false], false, false, 45] spawn sog_client_contract_fnc_hvt
 
 	// Eliminate Within Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, false, false, [false, true], 45] spawn sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, 75, 300, [false, true], false, false, 45] spawn sog_client_contract_fnc_hvt
 ```
 
 ## Links
