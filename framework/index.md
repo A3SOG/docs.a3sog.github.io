@@ -17,7 +17,7 @@ Some of the scripts and functions from **MalFramework** have been integrated int
 ## Links
 [Home](framework/index) |
 [Attack Module](framework/attack) |
+[Defuse Module](framework/defuse) |
 [Destroy Module](framework/destroy) |
 [Hostage Module](framework/hostage) |
-[HVT Module](framework/hvt) |
-[IED Module](framework/ied)
+[HVT Module](framework/hvt)

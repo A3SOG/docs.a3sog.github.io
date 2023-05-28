@@ -24,6 +24,8 @@ Arguments:
 Example:
 	[this, "task_name", 30] spawn sog_client_contract_fnc_makeIED
 ```
+
+### Setup Object(s)
 4. Place down the object(s)
 5. Call the `sog_client_contract_fnc_makeObject` function within the objects' init field that links the object to the Defuse Task
 
@@ -51,13 +53,13 @@ Arguments:
 	7: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
 
 Example:
-	["task_name", 2, 3, false] call sog_client_contract_fnc_defuse
+	["task_name", 2, 3, 375000, 75, 300] call sog_client_contract_fnc_defuse
 ```
 
 ## Links
 [Home](framework/index) |
 [Attack Module](framework/attack) |
+[Defuse Module](framework/defuse) |
 [Destroy Module](framework/destroy) |
 [Hostage Module](framework/hostage) |
-[HVT Module](framework/hvt) |
-[IED Module](framework/ied)
+[HVT Module](framework/hvt)

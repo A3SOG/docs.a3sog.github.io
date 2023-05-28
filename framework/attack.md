@@ -41,16 +41,16 @@ Arguments:
 
 Example:
 	// Default No Time Limit
-	["task_name", 1, 2, false] call sog_client_contract_fnc_attack
+	["task_name", 1, 2, 1500000, 75, 375] call sog_client_contract_fnc_attack
 
 	// Attack Within Time Limit
-	["task_name", 1, 2, false, false, 45] spawn sog_client_contract_fnc_attack
+	["task_name", 1, 2, 1500000, 75, 375, false, false, 45] spawn sog_client_contract_fnc_attack
 ```
 
 ## Links
 [Home](framework/index) |
 [Attack Module](framework/attack) |
+[Defuse Module](framework/defuse) |
 [Destroy Module](framework/destroy) |
 [Hostage Module](framework/hostage) |
-[HVT Module](framework/hvt) |
-[IED Module](framework/ied)
+[HVT Module](framework/hvt)

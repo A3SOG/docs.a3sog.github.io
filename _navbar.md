@@ -9,10 +9,10 @@
 * Framework
   * [Home](framework/index.md)
   * [Attack Module](framework/attack.md)
+  * [Defuse Module](framework/defuse.md)
   * [Destroy Module](framework/destroy.md)
   * [Hostage Module](framework/hostage.md)
   * [HVT Module](framework/hvt.md)
-  * [IED Module](framework/ied.md)
 
 * Operations
   * [Terminology](operations/terminology.md)

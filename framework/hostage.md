@@ -57,19 +57,19 @@ Arguments:
 
 Example:
 	// Default No Time Limit
-	["task_name", "marker_name", 1, 2, false] call sog_client_contract_fnc_hostage
+	["task_name", "marker_name", 1, 2, 1500000, 75, 500] call sog_client_contract_fnc_hostage
+	
+	// Execution When Time Limit Expires
+	["task_name", "marker_name", 1, 2, 1500000, 75, 500, false, false, [false, true], 45] spawn sog_client_contract_fnc_hostage
 
 	// CBRN Attack When Time Limit Expires
-	["task_name", "marker_name", 1, 2, false, false, [true, false], 45, "marker_name"] spawn sog_client_contract_fnc_hostage
-
-	// Execution When Time Limit Expires
-	["task_name", "marker_name", 1, 2, false, false, [false, true], 45] spawn sog_client_contract_fnc_hostage
+	["task_name", "marker_name", 1, 2, 1500000, 75, 500, false, false, [true, false], 45, "marker_name"] spawn sog_client_contract_fnc_hostage
 ```
 
 ## Links
 [Home](framework/index) |
 [Attack Module](framework/attack) |
+[Defuse Module](framework/defuse) |
 [Destroy Module](framework/destroy) |
 [Hostage Module](framework/hostage) |
-[HVT Module](framework/hvt) |
-[IED Module](framework/ied)
+[HVT Module](framework/hvt)
