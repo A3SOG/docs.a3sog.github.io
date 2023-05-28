@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'Special Operations Group',
-      repo: '',
-      loadNavbar: true
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-  <script>
-    function get_text(el) {
-      let ret = "";
-      let length = el.childNodes.length;
-      for(let i = 0; i < length; i++) {
-        let node = el.childNodes[i];
-        if(node.nodeType != 8) {
-          ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+  {% include head.html %}
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: 'Special Operations Group',
+        repo: '',
+        loadNavbar: true
+      }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script>
+      function get_text(el) {
+        let ret = "";
+        let length = el.childNodes.length;
+        for(let i = 0; i < length; i++) {
+          let node = el.childNodes[i];
+          if(node.nodeType != 8) {
+            ret += node.nodeType != 1 ? node.nodeValue : get_text(node);
+          }
         }
+        return ret;
       }
-      return ret;
-    }
 
-    setTimeout(function() {
-      let main = document.getElementsByClassName("content")[0].parentElement;
-      let newWrapper = document.createElement("div");
-      newWrapper.id = "readingTimeWrapper";
-      main.insertBefore(newWrapper, main.lastChild);
-      let newElement = document.createElement("h4");
-      newElement.id = "readingTime";
-      newElement.style = "margin-bottom: -60px";
-      newWrapper.appendChild(newElement);
-    }, 50);
+      setTimeout(function() {
+        let main = document.getElementsByClassName("content")[0].parentElement;
+        let newWrapper = document.createElement("div");
+        newWrapper.id = "readingTimeWrapper";
+        main.insertBefore(newWrapper, main.lastChild);
+        let newElement = document.createElement("h4");
+        newElement.id = "readingTime";
+        newElement.style = "margin-bottom: -60px";
+        newWrapper.appendChild(newElement);
+      }, 50);
 
-    let lastTime = 0;
+      let lastTime = 0;
 
-    setInterval(function() {
-      let words = get_text(document.getElementById("main"));
-      let time = Math.round(words.split(' ').length / 130);
-      if (time != lastTime) {
-        document.getElementById("readingTime").innerHTML = "Reading Time: " + time + ((time == 1) ? " minute" : " minutes");
-        lastTime = time;
-      }
-    }, 150);
-  </script>
-</body>
+      setInterval(function() {
+        let words = get_text(document.getElementById("main"));
+        let time = Math.round(words.split(' ').length / 130);
+        if (time != lastTime) {
+          document.getElementById("readingTime").innerHTML = "Reading Time: " + time + ((time == 1) ? " minute" : " minutes");
+          lastTime = time;
+        }
+      }, 150);
+    </script>
+  </body>
 </html>
