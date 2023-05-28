@@ -1,4 +1,4 @@
-# IED Task Module
+# Defuse Task Module
 
 ## Description
 This module adds support for IED Tasks/Missions.
