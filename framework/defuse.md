@@ -1,7 +1,7 @@
 # Defuse Task Module
 
 ## Description
-This module adds support for IED Tasks/Missions.
+This module adds support for Defuse Tasks/Missions.
 
 The mission maker must define IEDs and objects, the framework will monitor the status of those IEDs and objects.
 
