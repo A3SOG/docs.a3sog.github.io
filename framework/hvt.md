@@ -13,7 +13,7 @@ The module can also trigger mission complete or mission fail.
 1. Setup the HVT Task scene
 2. Place down the HVT unit(s)
 3. Place down an area marker that marks the extraction zone, also give it a unique name
-4. Call the `SOG_hvt_fnc_makeHVT` function within the HVTs' init field that links the unit to the HVT Task
+4. Call the `sog_client_contract_fnc_makeHVT` function within the HVTs' init field that links the unit to the HVT Task
 
 ```js
 Arguments:
@@ -21,11 +21,11 @@ Arguments:
 	1: STRING - The ID of the task
 
 Example:
-	[this, "task_name"] call SOG_hvt_fnc_makeHVT
+	[this, "task_name"] call sog_client_contract_fnc_makeHVT
 ```
 
 ### Register Task
-5. Register the HVT Task by calling the `SOG_hvt_fnc_registerHvtTask` function within the init field of the task
+5. Register the HVT Task by calling the `sog_client_contract_fnc_hvt` function within the init field of the task
 
 ```js
 Arguments:
@@ -33,23 +33,26 @@ Arguments:
 	1: STRING - Marker name for the extraction zone
 	2: SCALAR - Number of hvts KIA or escaped to fail the task
 	3: SCALAR - Number of captured or eliminated hvts to complete the task
-	4: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
-	5: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
-	6: ARRAY - Array of task types to select from (Optional, default: [true, false])
-	7: SCALAR - Number of seconds before hvts escape (Optional)
+	3: SCALAR - Amount of funds the company recieves if the task is successful
+	4: SCALAR - Amount of rating the company and player lose if the task is failed
+	5: SCALAR - Amount of rating the company and player recieve if the task is successful
+	6: BOOLEAN - Should the mission end (MissionSuccess) if the task is successful (Optional, default: false)
+	7: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
+	8: ARRAY - Array of task types to select from (Optional, default: [true, false])
+	9: SCALAR - Number of seconds before hvts escape (Optional)
 
 Example:
 	// Capture No Time Limit
-	["task_name", "marker_name", 1, 2, false, false, [true, false]] call SOG_hvt_fnc_registerHvtTask
+	["task_name", "marker_name", 1, 2, false, false, [true, false]] call sog_client_contract_fnc_hvt
 
 	// Eliminate No Time Limit
-	["task_name", "marker_name", 1, 2, false, false, [false, true]] call SOG_hvt_fnc_registerHvtTask
+	["task_name", "marker_name", 1, 2, false, false, [false, true]] call sog_client_contract_fnc_hvt
 
 	// Capture Within Time Limit
-	["task_name", "marker_name", 1, 2, false, false, [true, false], 45] spawn SOG_hvt_fnc_registerHvtTask
+	["task_name", "marker_name", 1, 2, false, false, [true, false], 45] spawn sog_client_contract_fnc_hvt
 
 	// Eliminate Within Time Limit
-	["task_name", "marker_name", 1, 2, false, false, [false, true], 45] spawn SOG_hvt_fnc_registerHvtTask
+	["task_name", "marker_name", 1, 2, false, false, [false, true], 45] spawn sog_client_contract_fnc_hvt
 ```
 
 ## Links
