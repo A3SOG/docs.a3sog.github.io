@@ -27,7 +27,7 @@ Example:
 ### Register Task
 4. Register the Attack Task by calling the `sog_client_contract_fnc_attack` function within the init field of the task
 
-```sqf
+```js
 Arguments:
 	0: STRING - ID of the task
 	1: SCALAR - Number of targets escaped to fail the task
