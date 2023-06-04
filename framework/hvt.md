@@ -43,16 +43,16 @@ Arguments:
 
 Example:
 	// Capture No Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, [true, false], false, false] call sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, -75, 300, [true, false], false, false] call sog_client_contract_fnc_hvt
 
 	// Eliminate No Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, [false, true], false, false] call sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, -75, 300, [false, true], false, false] call sog_client_contract_fnc_hvt
 
 	// Capture Within Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, [true, false], false, false, 45] spawn sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, -75, 300, [true, false], false, false, 45] spawn sog_client_contract_fnc_hvt
 
 	// Eliminate Within Time Limit
-	["task_name", "marker_name", 1, 2, 500000, 75, 300, [false, true], false, false, 45] spawn sog_client_contract_fnc_hvt
+	["task_name", "marker_name", 1, 2, 500000, -75, 300, [false, true], false, false, 45] spawn sog_client_contract_fnc_hvt
 ```
 
 ## Links

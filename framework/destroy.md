@@ -41,10 +41,10 @@ Arguments:
 
 Example:
 	// Default No Time Limit
-	["task_name", 1, 2, 250000, 75, 300] call sog_client_contract_fnc_destroy
+	["task_name", 1, 2, 250000, -75, 300] call sog_client_contract_fnc_destroy
 
 	// Destroy Within Time Limit
-	["task_name", 1, 2, 250000, 75, 300, false, false, 45] spawn sog_client_contract_fnc_destroy
+	["task_name", 1, 2, 250000, -75, 300, false, false, 45] spawn sog_client_contract_fnc_destroy
 ```
 
 ## Links

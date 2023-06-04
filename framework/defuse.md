@@ -53,7 +53,7 @@ Arguments:
 	7: BOOLEAN - Should the mission end (MissionFailed) if the task is failed (Optional, default: false)
 
 Example:
-	["task_name", 2, 3, 375000, 75, 300] call sog_client_contract_fnc_defuse
+	["task_name", 2, 3, 375000, -75, 300] call sog_client_contract_fnc_defuse
 ```
 
 ## Links
