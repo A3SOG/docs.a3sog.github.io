@@ -1,10 +1,10 @@
-* Organization
+<!-- * Organization
   * [Constitution](organization/constitution.md)
-  * [Code of Conduct](organization/coc.md)
+  * [Code of Conduct](organization/coc.md) -->
 
-* Getting Started
+<!-- * Getting Started
   * [Mods](starting/mods.md)
-  * [Your First Mission](starting/first-mission.md)
+  * [Your First Mission](starting/first-mission.md) -->
 
 * Framework
   * [Home](framework/index.md)
@@ -14,12 +14,12 @@
   * [Hostage Module](framework/hostage.md)
   * [HVT Module](framework/hvt.md)
 
-* Operations
+<!-- * Operations
   * [Terminology](operations/terminology.md)
   * [Gameplay Rules](operations/rules.md)
-  * [Reputation](operations/reputation.md)
+  * [Reputation](operations/reputation.md) -->
 
-* Certifications
+<!-- * Certifications
   * [Combat Aid](certs/combataid.md)
   * [Grenades](certs/grenades.md)
   * [LAT](certs/lat.md)
@@ -27,6 +27,6 @@
   * [Helicopter Signalling](certs/helicopter_signal.md)
   * [Scopes](certs/scopes.md)
   * [Grenadier](certs/grenadier.md)
-  * [UAV Operator](certs/uav.md)
+  * [UAV Operator](certs/uav.md) -->
 
-* [Specialists](specialists/index.md)
+<!-- * [Specialists](specialists/index.md) -->
