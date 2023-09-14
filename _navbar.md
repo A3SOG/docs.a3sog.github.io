@@ -12,6 +12,7 @@
   * [Defuse Module](framework/defuse.md)
   * [Destroy Module](framework/destroy.md)
   * [Hostage Module](framework/hostage.md)
+  * [Handler Module](framework/handler.md)
   * [HVT Module](framework/hvt.md)
 
 <!-- * Operations

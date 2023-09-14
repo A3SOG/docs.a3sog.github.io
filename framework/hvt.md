@@ -60,5 +60,6 @@ Example:
 [Attack Module](framework/attack) |
 [Defuse Module](framework/defuse) |
 [Destroy Module](framework/destroy) |
+[Handler Module](framework/handler) |
 [Hostage Module](framework/hostage) |
 [HVT Module](framework/hvt)
