@@ -9,10 +9,12 @@ Some of the scripts and functions from **MalFramework** have been integrated int
 ## Required Mods
 * ACE
 * CBA
+* ArmaRedis (Server side)
 
 ## Optional Mods
 * ACRE (Required by the ACRE Module)
 * TFAR (Required by the TFAR Module)
+* Pythia
 
 ## Links
 [Home](framework/index) |
