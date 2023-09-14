@@ -10,12 +10,12 @@ This module adds a handler for Tasks/Missions.
 ```js
 Arguments:
 	0: STRING - Type of task
-	1: ARRAY - Array of params for the task
+	1: ARRAY - Array of params for the task (see ea. task for params)
 	2: SCALAR - Amount of rating required for task (Optional)
 
 Example:
 	// HVT No Time Limit
-	["hvt", ["task_1", 2, 1, "", 500000, -75, 300, [false, true]]] remoteExec ["sog_fnc_taskHandler", 2, false];
+	["hvt", ["task_1", 2, 1, "", 500000, -75, 300, [false, true]], 250] remoteExec ["sog_fnc_taskHandler", 2, false];
 ```
 
 ## Links
