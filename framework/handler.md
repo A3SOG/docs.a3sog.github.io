@@ -10,7 +10,7 @@ This module adds a handler for Tasks/Missions.
 ```js
 Arguments:
 	0: STRING - Type of task
-	1: ARRAY - Array of params for the task (see ea. task for params)
+	1: ARRAY - Array of params for the task (see ea. task module for params)
 	2: SCALAR - Amount of rating required for task (Optional)
 
 Example:
