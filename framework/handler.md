@@ -15,7 +15,7 @@ Arguments:
 
 Example:
 	// HVT No Time Limit
-	["hvt", ["task_1", 2, 1, "", 500000, -75, 300, [false, true]], 250] remoteExec ["sog_fnc_taskHandler", 2, false];
+	["hvt", ["task_1", 2, 1, "", 500000, -75, 300, [false, true]], 250] remoteExec ["sog_client_contract_fnc_handler", 2, false];
 ```
 
 ## Links
