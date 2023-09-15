@@ -15,7 +15,7 @@ The module can also trigger mission complete or mission fail.
 2. Place down the target unit(s)
 3. Call the `sog_client_contract_fnc_makeTarget` function within the targets' init field that links the unit to the Attack Task
 
-```js
+```sqf
 Arguments:
 	0: OBJECT - The AI unit or object
 	1: STRING - The ID of the task
@@ -27,7 +27,7 @@ Example:
 ### Register Task
 4. Register the Attack Task by calling the `sog_client_contract_fnc_attack` function within the init field of the task
 
-```js
+```sqf
 Arguments:
 	0: STRING - ID of the task
 	1: SCALAR - Number of targets escaped to fail the task
